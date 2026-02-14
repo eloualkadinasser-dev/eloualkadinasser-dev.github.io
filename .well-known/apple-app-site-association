@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2W7AAC6D2V.com.nme.lockin",
+        "paths": ["/toggle", "/open"]
+      }
+    ]
+  }
+}
