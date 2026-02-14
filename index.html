@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCK IN - Focus App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #05070D; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { text-align: center; padding: 40px 20px; max-width: 400px; }
+        h1 { font-size: 2.5em; margin-bottom: 8px; }
+        .purple { color: #8B5CF6; }
+        p { color: rgba(255,255,255,0.6); margin-bottom: 30px; line-height: 1.6; }
+        .btn { display: inline-block; background: #8B5CF6; color: white; padding: 16px 40px; border-radius: 16px; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        .btn:hover { background: #7C3AED; }
+        .sub { font-size: 0.85em; color: rgba(255,255,255,0.3); margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LOCK <span class="purple">IN</span></h1>
+        <p>Bloque tes apps. Reste focus. Passe ton tag NFC pour activer le mode concentration.</p>
+        <a class="btn" href="https://apps.apple.com/app/lockin" id="download">Telecharger sur l'App Store</a>
+        <p class="sub">Si tu as deja l'app, approche ton tag NFC de ton iPhone.</p>
+    </div>
+    <script>
+        // Si l'utilisateur arrive ici depuis un tag NFC, rediriger vers l'app
+        if (window.location.pathname === '/toggle' || window.location.pathname === '/open') {
+            window.location.href = 'lockin://toggle';
+        }
+    </script>
+</body>
+</html>
