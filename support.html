@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCK-IN - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #05070D;
+            color: #E5E7EB;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+        .tagline {
+            color: #9CA3AF;
+            font-size: 1.1rem;
+            margin-bottom: 48px;
+        }
+        .card {
+            background: #111827;
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .card h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+        }
+        .card p {
+            color: #9CA3AF;
+        }
+        a {
+            color: #34547E;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover { text-decoration: underline; }
+        .faq-item {
+            border-bottom: 1px solid #1F2937;
+            padding: 20px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q {
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        .faq-a { color: #9CA3AF; }
+        .footer {
+            margin-top: 60px;
+            color: #6B7280;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="logo">LOCK-IN</p>
+        <p class="tagline">Bloque tes apps. Reste concentr&eacute;.</p>
+
+        <div class="card">
+            <h2>Nous contacter</h2>
+            <p>Un bug ? Une suggestion ? Contacte-nous &agrave; :<br>
+            <a href="mailto:contact@nme-lockin.com">contact@nme-lockin.com</a></p>
+        </div>
+
+        <div class="card">
+            <h2>Questions fr&eacute;quentes</h2>
+
+            <div class="faq-item">
+                <p class="faq-q">Comment fonctionne le blocage d'apps ?</p>
+                <p class="faq-a">LOCK-IN utilise le framework Screen Time d'Apple pour bloquer les apps de ton choix. Une fois le lock activ&eacute;, seul ton tag NFC peut d&eacute;bloquer tes apps.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">Quel tag NFC utiliser ?</p>
+                <p class="faq-a">N'importe quel tag NFC compatible (NFC Forum Type 1-5, ISO 14443, ISO 15693). Tu peux en trouver facilement en ligne pour quelques euros. Au premier scan, LOCK-IN enregistre ton tag.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">Que se passe-t-il si je perds mon tag NFC ?</p>
+                <p class="faq-a">Tu peux utiliser la proc&eacute;dure d'urgence (disponible 1 fois par jour, apr&egrave;s 1h de lock). Tu peux aussi r&eacute;initialiser ton tag dans les param&egrave;tres.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-q">Mes donn&eacute;es sont-elles s&eacute;curis&eacute;es ?</p>
+                <p class="faq-a">Oui. Tes donn&eacute;es sont stock&eacute;es via Firebase (Google) avec chiffrement. Nous n'avons aucun acc&egrave;s aux apps que tu utilises.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 NME - LOCK-IN</p>
+            <p><a href="privacy.html">Politique de confidentialit&eacute;</a></p>
+        </div>
+    </div>
+</body>
+</html>
